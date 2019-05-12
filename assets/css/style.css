@@ -1,0 +1,79 @@
+.jumbotron {
+    height: 250px;
+    background-image: url("../images/ress-612659-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    background-image: url("../images/opal.jpg");
+    background-size: 100%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 3px solid #C39953;
+    opacity: 0.9;
+    text-align: center; 
+    font-family: 'Megrim', cursive;
+    font-size: 5rem;
+    position: absolute;
+    z-index: 5;
+}
+
+.instructions {
+    border-radius: 10px;
+    border: 2px solid #A6A6A6;
+    
+    padding-top: 50px;
+    /* z-index: 1; */
+    background-color: #D98695;
+    opacity: 0.3;
+    bottom: -75px;
+}
+
+.text {
+    line-height: 3px;
+    opacity: 1 !important;
+}
+
+
+
+
+#game {
+    margin-top: 100px;
+}
+
+#targetDiv,
+#scoreDiv,
+#crystalsDiv {
+    border-radius: 10px;
+    border: 2px solid #A6A6A6;
+    /* padding-top: 25px; */
+    padding-bottom: 25px;
+    
+}
+
+#winsDiv,
+#lossesDiv {
+    border-radius: 10px;
+    border: 2px solid #A6A6A6;
+    margin-top: 50px;
+    
+}
+
+.gameLogos {
+    background-image: url("../images/Opal.jpg");
+    background-size: cover;
+    image-orientation: flip;
+    border-radius: 5px;
+    padding: 15px auto;
+    opacity: 0.9;
+}
+
+h4 {
+    font-family: 'Megrim', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Unit 4 Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Pacifico" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -17,84 +19,91 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
     <!-- Header Background Image -->
-    <section>
-        <div id="header-image">
-            <img src="#" />
-        </div>
+    <div class="jumbotron jumbotron-fluid">
 
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-10 offset-md-1" id="logo">
+                <div class="col-md-8 offset-md-2" id="logo">
                     <h1>Crystal Collector</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12" id="instructions">
-                    <h4>Instructions</h4>
-                    <p>Line One Intructions</p>
-                    <p>Line One Intructions</p>
-                    <p>Line One Intructions</p>
-                    <p>Line One Intructions</p>
-                    <p>Line One Intructions</p>
+                <div class="col-md-12 instructions">
+                    <div class="text">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of
+                            points
+                            to your total score.</p>
+                        <p>You win the game by matching your total score to the random number. You lost the game if your
+                            total score goes above the random number.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <div class="container text-center">
+    </div>
+
+    <div class="container text-center" id="game">
         <div class="row">
             <div class="col-md-3" id="targetDiv">
-                <div class="row">
+                <div class="row gameLogos">
                     <div class="col-md-12">
                         <h4>Target Score:</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>85</h2>
+                        <h2 id="targetScore"></h2>
                     </div>
                 </div>
             </div>
             <div class="col-md-3" id="scoreDiv">
-                <div class="row">
+                <div class="row gameLogos">
                     <div class="col-md-12">
                         <h4>Your Score:</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>16</h2>
+                        <h2 id="yourScore">0</h2>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" id="crystalsDiv"></div>
+            <div class="col-md-6" id="crystalsDiv">
+                <img src="assets/images/greenCrystal.jpg" class="green" width="22%">
+                <img src="assets/images/pinkCrystal.jpg" class="pink" width="22%">
+                <img src="assets/images/yellowCrystal.jpg" class="yellow" width="22%">
+                <img src="assets/images/purpleCrystal.jpg" class="purple" width="22%">
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6" id="winsDiv">
-                <div class="row">
+                <div class="row gameLogos">
                     <div class="col-md-12">
                         <h4>Wins:</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>6</h2>
+                        <h2 id="wins">0</h2>
                     </div>
                 </div>
             </div>
             <div class="col-md-6" id="lossesDiv">
-                <div class="row">
+                <div class="row gameLogos">
                     <div class="col-md-12">
                         <h4>Losses:</h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>3</h2>
+                        <h2 id="losses">0</h2>
                     </div>
                 </div>
             </div>
@@ -102,5 +111,7 @@
     </div>
 
 </body>
+
+<script src="assets/javascript/game.js"></script>
 
 </html>
