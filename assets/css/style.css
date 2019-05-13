@@ -16,30 +16,15 @@ h1 {
     font-family: 'Megrim', cursive;
     font-size: 5rem;
     position: absolute;
-    z-index: 5;
 }
-
-.instructions {
-    border-radius: 10px;
-    border: 2px solid #A6A6A6;
-    
-    padding-top: 50px;
-    /* z-index: 1; */
-    background-color: #D98695;
-    opacity: 0.3;
-    bottom: -75px;
-}
-
-.text {
-    line-height: 3px;
-    opacity: 1 !important;
-}
-
-
-
 
 #game {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+p {
+    line-height: 18px;
+    margin: 0 auto;
 }
 
 #targetDiv,
@@ -49,6 +34,7 @@ h1 {
     border: 2px solid #A6A6A6;
     /* padding-top: 25px; */
     padding-bottom: 25px;
+    margin-top: 50px;
     
 }
 
